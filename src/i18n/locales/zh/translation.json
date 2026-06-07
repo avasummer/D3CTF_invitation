@@ -17,10 +17,10 @@
     "gradientEnd": "渐变结束",
     "printButton": "打印邀请函",
     "gradientOptions": {
-      "deepPurple": "深紫色",
+      "lightBlue": "浅蓝色",
+      "lightIndigo": "浅靛蓝色",
       "deepBlue": "深蓝色",
-      "deepIndigo": "深靛蓝色",
-      "deepSlate": "深石板色"
+      "green": "绿色"
     }
   },
   "theme": {

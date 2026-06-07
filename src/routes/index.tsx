@@ -41,8 +41,8 @@ const entranceAnimations = [
 function App() {
   const { t } = useTranslation()
   const [guestName, setGuestName] = useState('Guest Name')
-  const [gradientFrom, setGradientFrom] = useState('purple-950')
-  const [gradientTo, setGradientTo] = useState('indigo-950')
+  const [gradientFrom, setGradientFrom] = useState('blue-300')
+  const [gradientTo, setGradientTo] = useState('indigo-300')
   const [animationComplete, setAnimationComplete] = useState(false)
   const [cardAnimation, setCardAnimation] = useState('')
   const [formAnimation, setFormAnimation] = useState('')
@@ -87,10 +87,10 @@ function App() {
   }
 
   const gradientOptions = [
-    { value: 'purple-950', label: t('invitation.gradientOptions.deepPurple') },
-    { value: 'blue-950', label: t('invitation.gradientOptions.deepBlue') },
-    { value: 'indigo-950', label: t('invitation.gradientOptions.deepIndigo') },
-    { value: 'slate-950', label: t('invitation.gradientOptions.deepSlate') },
+    { value: 'blue-300', label: t('invitation.gradientOptions.lightBlue') },
+    { value: 'indigo-300', label: t('invitation.gradientOptions.lightIndigo') },
+    { value: 'blue-500', label: t('invitation.gradientOptions.deepBlue') },
+    { value: 'emerald-300', label: t('invitation.gradientOptions.green') },
   ]
 
   return (

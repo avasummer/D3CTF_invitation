@@ -17,10 +17,10 @@
     "gradientEnd": "Gradient End",
     "printButton": "Print Invitation",
     "gradientOptions": {
-      "deepPurple": "Deep Purple",
+      "lightBlue": "Light Blue",
+      "lightIndigo": "Light Indigo",
       "deepBlue": "Deep Blue",
-      "deepIndigo": "Deep Indigo",
-      "deepSlate": "Deep Slate"
+      "green": "Green"
     }
   },
   "theme": {
