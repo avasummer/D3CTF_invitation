@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { useTranslation } from 'react-i18next'
-import binaryNinjaSvg from '@/icon/binary_ninja.svg'
+import hexRaysSvg from '@/icon/hexrays.svg'
 import googleCloudSvg from '@/icon/google_cloud.svg'
 
 interface InvitationCardProps {
@@ -87,21 +87,21 @@ export function InvitationCard({
           </div>
           <div className="flex justify-between items-center w-full px-1 print:justify-between print:px-[5%] print:gap-4">
             <a
-              href="https://binary.ninja"
+              href="https://hex-rays.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 group/link hover:scale-105 transition-transform"
             >
               <Avatar className="w-8 h-8 print:w-18 print:h-18">
                 <AvatarImage
-                  src={binaryNinjaSvg}
-                  alt="Binary Ninja"
+                  src={hexRaysSvg}
+                  alt="Hex-Rays"
                   className="object-contain group-hover/link:animate-spin print:animate-none"
                 />
-                <AvatarFallback>BN</AvatarFallback>
+                <AvatarFallback>HR</AvatarFallback>
               </Avatar>
               <span className="text-xs font-bold text-gray-200 whitespace-nowrap group-hover/link:text-blue-400 transition-colors print:text-2xl">
-                Binary Ninja
+                Hex-Rays
               </span>
             </a>
             <a
