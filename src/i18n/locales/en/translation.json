@@ -4,7 +4,7 @@
   },
   "invitation": {
     "opening": "Dear",
-    "closing": "is cordially invited to attend the D³CTF 2025 event",
+    "closing": "is cordially invited to attend the D³CTF 2026 event",
     "invitation": "Invitation",
     "sponsoredBy": "Sponsored by",
     "customTitle": "Customize Invitation",
@@ -17,10 +17,10 @@
     "gradientEnd": "Gradient End",
     "printButton": "Print Invitation",
     "gradientOptions": {
-      "deepPurple": "Deep Purple",
+      "lightBlue": "Light Blue",
+      "lightIndigo": "Light Indigo",
       "deepBlue": "Deep Blue",
-      "deepIndigo": "Deep Indigo",
-      "deepSlate": "Deep Slate"
+      "green": "Green"
     }
   },
   "theme": {

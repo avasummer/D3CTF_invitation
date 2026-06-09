@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { useTranslation } from 'react-i18next'
-import binaryNinjaSvg from '@/icon/binary_ninja.svg'
+import hexRaysSvg from '@/icon/hexrays.svg'
 import googleCloudSvg from '@/icon/google_cloud.svg'
 
 interface InvitationCardProps {
@@ -14,8 +14,8 @@ interface InvitationCardProps {
 
 export function InvitationCard({
   guestName = 'Guest Name',
-  gradientFrom = 'purple-950',
-  gradientTo = 'indigo-950',
+  gradientFrom = 'blue-300',
+  gradientTo = 'indigo-300',
   ctfName = 'D³ctf',
   invitationType = 'INVITATION',
 }: InvitationCardProps) {
@@ -23,15 +23,15 @@ export function InvitationCard({
   // 创建渐变类名映射
   const gradientClasses = {
     // 从颜色
-    'from-purple-950': gradientFrom === 'purple-950',
-    'from-blue-950': gradientFrom === 'blue-950',
-    'from-indigo-950': gradientFrom === 'indigo-950',
-    'from-slate-950': gradientFrom === 'slate-950',
+    'from-blue-300': gradientFrom === 'blue-300',
+    'from-indigo-300': gradientFrom === 'indigo-300',
+    'from-blue-500': gradientFrom === 'blue-500',
+    'from-emerald-300': gradientFrom === 'emerald-300',
     // 到颜色
-    'to-purple-950': gradientTo === 'purple-950',
-    'to-blue-950': gradientTo === 'blue-950',
-    'to-indigo-950': gradientTo === 'indigo-950',
-    'to-slate-950': gradientTo === 'slate-950',
+    'to-blue-300': gradientTo === 'blue-300',
+    'to-indigo-300': gradientTo === 'indigo-300',
+    'to-blue-500': gradientTo === 'blue-500',
+    'to-emerald-300': gradientTo === 'emerald-300',
   }
 
   // 将类名映射转换为字符串
@@ -47,7 +47,7 @@ export function InvitationCard({
       <div className="flex-1 flex flex-col justify-evenly">
         {/* CTF Logo */}
         <div className="my-6 print:my-4">
-          <h1 className="text-6xl font-bold text-blue-500 print:text-8xl">
+          <h1 className="text-6xl font-bold text-black print:text-8xl">
             {ctfName === 'D³ctf' ? (
               <>
                 D<sup>3</sup>CTF
@@ -60,20 +60,20 @@ export function InvitationCard({
 
         {/* Invitation Title */}
         <div className="my-6 print:my-16">
-          <h2 className="text-5xl font-bold tracking-wider text-gray-100 print:text-7xl">
+          <h2 className="text-5xl font-bold tracking-wider text-blue-950 print:text-7xl">
             {t('invitation.invitation', invitationType)}
           </h2>
         </div>
 
         {/* Guest Section */}
         <div className="my-8 print:my-20">
-          <p className="text-xl text-gray-200 print:text-3xl">
+          <p className="text-xl text-slate-700 print:text-3xl">
             {t('invitation.opening')}
           </p>
-          <p className="text-3xl text-blue-400 my-2 print:text-5xl font-bold">
+          <p className="text-3xl text-black my-2 print:text-5xl font-bold">
             {guestName}
           </p>
-          <p className="text-xl text-gray-200 print:text-3xl">
+          <p className="text-xl text-slate-700 print:text-3xl">
             {t('invitation.closing')}
           </p>
         </div>
@@ -81,27 +81,27 @@ export function InvitationCard({
         {/* Sponsors */}
         <div className="mt-auto mb-3 print:my-4">
           <div className="my-2 print:my-10">
-            <p className="text-l text-gray-200 print:text-xl">
+            <p className="text-l text-slate-700 print:text-xl">
               {t('invitation.sponsoredBy')}
             </p>
           </div>
           <div className="flex justify-between items-center w-full px-1 print:justify-between print:px-[5%] print:gap-4">
             <a
-              href="https://binary.ninja"
+              href="https://hex-rays.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 group/link hover:scale-105 transition-transform"
             >
               <Avatar className="w-8 h-8 print:w-18 print:h-18">
                 <AvatarImage
-                  src={binaryNinjaSvg}
-                  alt="Binary Ninja"
+                  src={hexRaysSvg}
+                  alt="Hex-Rays"
                   className="object-contain group-hover/link:animate-spin print:animate-none"
                 />
-                <AvatarFallback>BN</AvatarFallback>
+                <AvatarFallback>HR</AvatarFallback>
               </Avatar>
-              <span className="text-xs font-bold text-gray-200 whitespace-nowrap group-hover/link:text-blue-400 transition-colors print:text-2xl">
-                Binary Ninja
+              <span className="text-xs font-bold text-slate-700 whitespace-nowrap group-hover/link:text-blue-700 transition-colors print:text-2xl">
+                Hex-Rays
               </span>
             </a>
             <a
@@ -118,7 +118,7 @@ export function InvitationCard({
                 />
                 <AvatarFallback>GC</AvatarFallback>
               </Avatar>
-              <span className="text-xs font-bold text-gray-200 whitespace-nowrap group-hover/link:text-blue-400 transition-colors print:text-2xl">
+              <span className="text-xs font-bold text-slate-700 whitespace-nowrap group-hover/link:text-blue-700 transition-colors print:text-2xl">
                 Google Cloud
               </span>
             </a>
